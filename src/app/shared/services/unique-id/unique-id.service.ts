@@ -15,7 +15,6 @@ export class UniqueIdService {
 
 
     public generateUniqueIdWithPrefix(prefix: string): string {
-
         if(!prefix || !this.validId.test(prefix)){
             throw Error('Prefix can not be empty');
         }
